@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body> </body>
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="menu__icon"><span></span></div>
+        <nav class="menu__body">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="clothes.html">Clothes</a></li>
+            <li class="menu__item"><a class="menu__link" href="shoes.html">Shoes</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
+          </ul>
+        </nav><a class="header__logo-link" href="#"> <img class="header__logo-img" src="../img/logo.svg" alt="логотип"></a>
+        <div class="header__search-wrapper">
+          <input class="header__search-input" type="search" name="header__searh" placeholder="Search.."><a class="header__search-btn" type="button" value="">
+            <svg class="svg-header_search">
+              <use xlink:href="/img/sprite.svg#header_searh"></use>
+            </svg></a>
+        </div>
+        <div class="header__market-wrapper"><a class="header__user header__link" href="contact.html">
+            <svg class="svg-header_user">
+              <use xlink:href="/img/sprite.svg#header_user"></use>
+            </svg></a><a class="header__cart header__link" href="#">
+            <svg class="svg-header_cart">
+              <use xlink:href="/img/sprite.svg#header_cart"></use>
+            </svg><span class="header__cart-count" href="#"> </span></a><a class="header__favorites header__link" href="#">
+            <svg class="svg-header_favorites">
+              <use xlink:href="/img/sprite.svg#header_favorites"></use>
+            </svg></a></div>
+      </div>
+    </div>
+  </header>
+  <section class="category">
+    <div class="container">
+      <h2 class="category__title">CLOTHES</h2>
+      <div class="category__wrapper">
+        <div class="filter">
+          <form class="data-filter-group filter__category">
+            <div class="filter__title">CATEGORY</div>
+            <fieldset class="filter__category-list">
+              <button class="filter__category-item" type="button" data-filter="all">All</button>
+              <button class="filter__category-item" type="button" data-filter=".dresses">Dresses</button>
+              <button class="filter__category-item" type="button" data-filter=".denim">Denim</button>
+              <button class="filter__category-item" type="button" data-filter=".jeans">Jeans</button>
+              <button class="filter__category-item" type="button" data-filter=".jumpsuits">Jumpsuits</button>
+              <button class="filter__category-item" type="button" data-filter=".tops">Tops</button>
+              <button class="filter__category-item" type="button" data-filter=".jackets">Jackets and coats</button>
+              <button class="filter__category-item" type="button" data-filter=".pants">Pants</button>
+              <button class="filter__category-item" type="button" data-filter=".shorts">Shorts</button>
+              <button class="filter__category-item" type="button" data-filter=".skirts">Skirts</button>
+              <button class="filter__category-item" type="button" data-filter=".loungerie">Loungerie & underwear</button>
+              <button class="filter__category-item" type="button" data-filter=".leather">Leather</button>
+              <button class="filter__category-item" type="button" data-filter=".sweaters">Sweaters & knits</button>
+            </fieldset>
+          </form>
+          <form class="filter-group filter__size">
+            <div class="filter__title"><span class="filter__title-text">SIZE</span>
+              <button class="clear" type="submit">Clear
+                <svg class="clear__svg">
+                  <use xlink:href="/img/sprite.svg#clear"></use>
+                </svg>
+              </button>
+            </div>
+            <fieldset class="filter__size-list filter__category-list">
+              <button class="filter__size-item" type="button" data-toggle=".s1">S</button>
+              <button class="filter__size-item" type="button" data-toggle=".s2">XXS</button>
+              <button class="filter__size-item" type="button" data-toggle=".s3">M</button>
+              <button class="filter__size-item" type="button" data-toggle=".s4">XS</button>
+              <button class="filter__size-item" type="button" data-toggle=".s5">L</button>
+              <button class="filter__size-item" type="button" data-toggle=".s6">Xl</button>
+              <button class="filter__size-item" type="button" data-toggle=".s7">23</button>
+              <button class="filter__size-item" type="button" data-toggle=".s8">24</button>
+              <button class="filter__size-item" type="button" data-toggle=".s9">25</button>
+              <button class="filter__size-item" type="button" data-toggle=".s10">26</button>
+              <button class="filter__size-item" type="button" data-toggle=".s11">27</button>
+              <button class="filter__size-item" type="button" data-toggle=".s12">28</button>
+              <button class="filter__size-item" type="button" data-toggle=".s1">29</button>
+              <button class="filter__size-item" type="button" data-toggle=".s2">30</button>
+              <button class="filter__size-item" type="button" data-toggle=".s3">31</button>
+              <button class="filter__size-item" type="button" data-toggle=".s4">32</button>
+            </fieldset>
+          </form>
+          <form class="filter-group filter__color">
+            <div class="filter__title"> <span class="filter__title-text">COLOR</span>
+              <button class="clear" type="submit">Clear
+                <svg class="clear__svg">
+                  <use xlink:href="/img/sprite.svg#clear"></use>
+                </svg>
+              </button>
+            </div>
+            <fieldset class="filter__color-list filter__category-list">
+              <button class="filter__color-item" type="button" data-toggle=".biege" style="background-color: #F3ECDB;"><span class="filter__color-text">Biege</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".blue" style="background-color: #465BA3;"><span class="filter__color-text">Blue</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".black" style="background-color: #000000;"><span class="filter__color-text">Black</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".orange" style="background-color: #F07B4E;"><span class="filter__color-text">Orange</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".green" style="background-color: #41854D;"><span class="filter__color-text">Green</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".brown" style="background-color: #665147;"><span class="filter__color-text">Brown</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".purple" style="background-color: #893D88;"><span class="filter__color-text">Purple</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".gold" style="background-color: #F3B121;"><span class="filter__color-text">Gold</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".taupe" style="background-color: #CAC1B8;"><span class="filter__color-text">Taupe</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".white" style="background-color: #ffffff;"><span class="filter__color-text">White</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".pink" style="background-color: #F2A1B1;"><span class="filter__color-text">Pink</span></button>
+              <button class="filter__color-item" type="button" data-toggle=".red" style="background-color: #D23C47;"><span class="filter__color-text">Red</span></button>
+            </fieldset>
+          </form>
+          <form class="data-filter-group filter__price">
+            <div class="filter__title"> <span class="filter__title-text">PRICE</span>
+              <button class="clear" type="submit">Clear
+                <svg class="clear__svg">
+                  <use xlink:href="/img/sprite.svg#clear"></use>
+                </svg>
+              </button>
+            </div>
+            <ul class="filter__price-list filter__category-list">
+              <li class="filter__price-item">
+                <div class="filter__price-check"></div>
+                <div class="filter__price-value"><span class="filter__price-min">0</span><span class="filter__price-max">10,000 </span></div>
+              </li>
+              <li class="filter__price-item">
+                <div class="filter__price-check"></div>
+                <div class="filter__price-value"><span class="filter__price-min">10,000</span><span class="filter__price-max">20,000 </span></div>
+              </li>
+              <li class="filter__price-item">
+                <div class="filter__price-check"></div>
+                <div class="filter__price-value"><span class="filter__price-min">20,000</span><span class="filter__price-max">50,000 </span></div>
+              </li>
+              <li class="filter__price-item">
+                <div class="filter__price-check"></div>
+                <div class="filter__price-value"><span class="filter__price-min">50,000</span><span class="filter__price-max">100,000 </span></div>
+              </li>
+              <li class="filter__price-item">
+                <div class="filter__price-check"></div>
+                <div class="filter__price-value"><span class="filter__price-min">100,000</span><span class="filter__price-max">200,000</span></div>
+              </li>
+              <li class="filter__price-item">
+                <form class="filter__price-form" action="#">
+                  <div class="filter__price-wrapper"><span class="valute">₦</span>
+                    <input class="filter__price-input filter__price-input_min" type="text" name="filter__price-input">
+                  </div><span class="filter__price-to">to</span>
+                  <div class="filter__price-wrapper"><span class="valute">₦</span>
+                    <input class="filter__price-input filter__price-input_max" type="text" name="filter__price-input">
+                  </div>
+                  <div class="filter__price-btn btn">Apply</div>
+                </form>
+              </li>
+            </ul>
+          </form>
+        </div>
+        <div class="product__wrapper category__items">
+          <div class="product__sort-wrapper">
+            <select class="product__sort" id="product__sort" name="product__sort">
+              <option value="1" selected>Most popular</option>
+              <option value="2">Best Selling</option>
+              <option value="3">Price: High to Low</option>
+              <option value="4">Price: Low to High</option>
+            </select><span class="select__title">Sort by:</span>
+          </div>
+          <ul class="product__items-category">
+            <li class="product__item mix dresses s1 beige"><a class="product__link"><img class="product__img" src="img/products/product_1.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">10,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix denim s2 blue"><a class="product__link"><img class="product__img" src="img/products/product_2.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">15,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix jeans s3 black"><a class="product__link"><img class="product__img" src="img/products/product_3.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">20,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix jumpsuits s4 orange"><a class="product__link"><img class="product__img" src="img/products/product_4.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">40,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix tops s5 green"><a class="product__link"><img class="product__img" src="img/products/product_5.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">50,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix jackets s6 brown"><a class="product__link"><img class="product__img" src="img/products/product_6.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">80,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix pants s7 purple"><a class="product__link"><img class="product__img" src="img/products/product_7.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">100,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix shorts s8 gold"><a class="product__link"><img class="product__img" src="img/products/product_8.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">180,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix skirts s9 taupe"><a class="product__link"><img class="product__img" src="img/products/product_9.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">5,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix loungerie s10 white"><a class="product__link"><img class="product__img" src="img/products/product_10.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">10,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix leather s11 pink"><a class="product__link"><img class="product__img" src="img/products/product_11.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">12,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="product__item mix sweater s12 red"><a class="product__link"><img class="product__img" src="img/products/product_12.jpg">
+                <div class="product__bottom">
+                  <div class="product__name">1Multicolored armless top</div>
+                  <div class="product__price">45,000</div>
+                </div></a>
+              <div class="product__item-overlay">
+                <button class="product__item-btn product__favorites">
+                  <svg class="product__item-favorites">
+                    <use xlink:href="/img/sprite.svg#header_favorites"></use>
+                  </svg>
+                </button>
+                <button class="product__item-btn product__to-cart">ADD TO CART
+                  <svg class="product__item-cart">
+                    <use xlink:href="/img/sprite.svg#cart"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="mixitup-page-list"></div>
+        </div><a class="button__top menu-link" data-goto=".header">
+          <svg class="arrow__top">
+            <use xlink:href="/img/sprite.svg#arrow_top"></use>
+          </svg></a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__items"><a class="footer__item footer__logo-link" href="#"> <img class="footer__logo-img" src="../img/logo.svg" alt="логотип"></a>
+        <div class="footer__item footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a class="footer__menu-link" src="#">About Us</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" src="#">Contact</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" src="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer__social">
+          <ul class="footer__menu-list">
+            <li class="footer__social-item"><a class="footer__social-link" src="#"> Facebook
+                <svg class="svg-facebook">
+                  <use xlink:href="/img/sprite.svg#facebook"></use>
+                </svg></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" src="#">Twitter
+                <svg class="svg-twitter">
+                  <use xlink:href="/img/sprite.svg#twitter"></use>
+                </svg></a></li>
+            <li class="footer__social-item"><a class="footer__social-link" src="#">Instagram
+                <svg class="svg-instagram">
+                  <use xlink:href="/img/sprite.svg#instagram"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer__form">
+          <h4 class="footer__form-title">Subscribe to our newsletter</h4>
+          <div class="footer__form-wrapper">
+            <input class="footer__form-email" type="email" name="email" placeholder="EmailAddress">
+            <input class="footer__form-btn" type="submit" value="ОК">
+          </div>
+        </div>
+        <div class="footer__item footer__contact">
+          <ul class="footer__contact-list">
+            <li class="footer__contact-item"><a class="footer__contact-link" href="#">497 Evergreen Rd. Roseville, CA 95673</a></li>
+            <li class="footer__contact-item"><a class="footer__contact-link" href="tel:44345678903" target="_blank">+44 345 678 903</a></li>
+            <li class="footer__contact-item"><a class="footer__contact-link" href="mailto:adobexd@mail.com" target="_blank">adobexd@mail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</html>
